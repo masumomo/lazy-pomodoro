@@ -3,10 +3,24 @@ import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import livereload from "rollup-plugin-livereload";
 import { terser } from "rollup-plugin-terser";
-import css from "rollup-plugin-css-only";
-import copy from "rollup-plugin-copy-assets";
+// library that helps you import in svelte with
+// absolute paths, instead of
+// import Component  from "../../../../components/Component.svelte";
+// we will be able to say
+// import Component from "components/Component.svelte";
+import alias from "@rollup/plugin-alias";
 
 const production = !process.env.ROLLUP_WATCH;
+
+// configure aliases for absolute imports
+const aliases = alias({
+  resolve: [".svelte", ".js"], //optional, by default this will just look for .js files or folders
+  entries: [
+    { find: "components", replacement: "src/components" },
+    { find: "views", replacement: "src/views" },
+    { find: "assets", replacement: "src/assets" },
+  ],
+});
 
 function serve() {
   let server;
@@ -43,14 +57,14 @@ export default {
   },
   plugins: [
     svelte({
-      compilerOptions: {
-        // enable run-time checks when not in production
-        dev: !production,
+      // enable run-time checks when not in production
+      dev: !production,
+      // we'll extract any component CSS out into
+      // a separate file - better for performance
+      css: (css) => {
+        css.write("bundle.css");
       },
     }),
-    // we'll extract any component CSS out into
-    // a separate file - better for performance
-    css({ output: "bundle.css" }),
 
     // If you have external dependencies installed from
     // npm, you'll most likely need these plugins. In
@@ -62,9 +76,6 @@ export default {
       dedupe: ["svelte"],
     }),
     commonjs(),
-    copy({
-      assets: ["src/assets"],
-    }),
 
     // In dev mode, call `npm run start` once
     // the bundle has been generated
@@ -77,6 +88,13 @@ export default {
     // If we're building for production (npm run build
     // instead of npm run dev), minify
     production && terser(),
+
+    // for absolut imports
+    // i.e., instead of
+    // import Component  from "../../../../components/Component.svelte";
+    // we will be able to say
+    // import Component from "components/Component.svelte";
+    aliases,
   ],
   watch: {
     clearScreen: false,
