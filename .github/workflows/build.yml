@@ -22,4 +22,4 @@ jobs:
       - name: install and build
         run: |
           yarn install
-          arn run build
+          yarn run build
