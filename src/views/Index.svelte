@@ -16,7 +16,6 @@
   const login = "/assets/img/login.jpg";
   const profile = "/assets/img/profile.jpg";
   const landing = "/assets/img/landing.jpg";
-  export let location;
 </script>
 
 <IndexNavbar />
@@ -28,8 +27,8 @@
           Notus Svelte - A beautiful extension for Tailwind CSS.
         </h2>
         <p class="mt-4 text-lg leading-relaxed text-gray-600">
-          Notus Svelte is Free and Open Source. It does not change or
-          add any CSS to the already one from
+          Notus Svelte is Free and Open Source. It does not change or add any
+          CSS to the already one from
           <a
             href="https://tailwindcss.com/?ref=creativetim"
             class="text-gray-700"
@@ -37,8 +36,8 @@
           >
             Tailwind CSS
           </a>
-          . It features multiple HTML elements and it comes with dynamic
-          components for ReactJS, Vue and Angular.
+          . It features multiple HTML elements and it comes with dynamic components
+          for ReactJS, Vue and Angular.
         </p>
         <div class="mt-12">
           <a
@@ -62,7 +61,7 @@
 
   <img
     class="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860-px"
-    src="{patternVue}"
+    src={patternVue}
     alt="..."
   />
 </section>
@@ -84,7 +83,7 @@
       <polygon
         class="text-gray-200 fill-current"
         points="2560 0 2560 100 0 100"
-      ></polygon>
+      />
     </svg>
   </div>
   <div class="container mx-auto">
@@ -110,7 +109,7 @@
               <polygon
                 points="-30,95 583,95 583,65"
                 class="text-red-500 fill-current"
-              ></polygon>
+              />
             </svg>
             <h4 class="text-xl font-bold text-white">
               Great for your awesome project
@@ -132,11 +131,9 @@
                 <div
                   class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                 >
-                  <i class="fas fa-sitemap"></i>
+                  <i class="fas fa-sitemap" />
                 </div>
-                <h6 class="text-xl mb-1 font-semibold">
-                  CSS Components
-                </h6>
+                <h6 class="text-xl mb-1 font-semibold">CSS Components</h6>
                 <p class="mb-4 text-gray-600">
                   Notus Svelte comes with a huge number of Fully Coded CSS
                   components.
@@ -148,7 +145,7 @@
                 <div
                   class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                 >
-                  <i class="fas fa-drafting-compass"></i>
+                  <i class="fas fa-drafting-compass" />
                 </div>
                 <h6 class="text-xl mb-1 font-semibold">
                   JavaScript Components
@@ -166,7 +163,7 @@
                 <div
                   class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                 >
-                  <i class="fas fa-newspaper"></i>
+                  <i class="fas fa-newspaper" />
                 </div>
                 <h6 class="text-xl mb-1 font-semibold">Pages</h6>
                 <p class="mb-4 text-gray-600">
@@ -180,11 +177,9 @@
                 <div
                   class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-white"
                 >
-                  <i class="fas fa-file-alt"></i>
+                  <i class="fas fa-file-alt" />
                 </div>
-                <h6 class="text-xl mb-1 font-semibold">
-                  Documentation
-                </h6>
+                <h6 class="text-xl mb-1 font-semibold">Documentation</h6>
                 <p class="mb-4 text-gray-600">
                   Built by developers for developers. You will love how easy is
                   to to work with Notus Svelte.
@@ -203,7 +198,7 @@
         <div
           class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
         >
-          <i class="fas fa-sitemap text-xl"></i>
+          <i class="fas fa-sitemap text-xl" />
         </div>
         <h3 class="text-3xl mb-2 font-semibold leading-normal">
           CSS Components
@@ -261,7 +256,7 @@
           class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
         >
           View All
-          <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+          <i class="fa fa-angle-double-right ml-1 leading-relaxed" />
         </a>
       </div>
 
@@ -269,32 +264,32 @@
         <div class="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0">
           <img
             alt="..."
-            src="{componentBtn}"
+            src={componentBtn}
             class="w-full align-middle rounded absolute shadow-lg max-w-100-px left-145-px -top-29-px z-3"
           />
           <img
             alt="..."
-            src="{componentProfileCard}"
+            src={componentProfileCard}
             class="w-full align-middle rounded-lg absolute shadow-lg max-w-210-px left-260-px -top-160-px"
           />
           <img
             alt="..."
-            src="{componentInfoCard}"
+            src={componentInfoCard}
             class="w-full align-middle rounded-lg absolute shadow-lg max-w-180-px left-40-px -top-225-px z-2"
           />
           <img
             alt="..."
-            src="{componentInfo2}"
+            src={componentInfo2}
             class="w-full align-middle rounded-lg absolute shadow-2xl max-w-200-px -left-50-px top-25-px"
           />
           <img
             alt="..."
-            src="{componentMenu}"
+            src={componentMenu}
             class="w-full align-middle rounded absolute shadow-lg max-w-580-px -left-20-px top-210-px"
           />
           <img
             alt="..."
-            src="{componentBtnPink}"
+            src={componentBtnPink}
             class="w-full align-middle rounded absolute shadow-xl max-w-120-px left-195-px top-95-px"
           />
         </div>
@@ -309,32 +304,28 @@
               href="https://www.creative-tim.com/learning-lab/tailwind/svelte/alerts/notus?ref=ns-index"
               target="_blank"
             >
-              <div
-                class="bg-red-600 shadow-lg rounded-lg text-center p-8"
-              >
+              <div class="bg-red-600 shadow-lg rounded-lg text-center p-8">
                 <img
                   alt="..."
                   class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
                   src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/svelte.jpg"
                 />
-                <p class="text-lg text-white mt-4 font-semibold">
-                  Svelte
-                </p>
+                <p class="text-lg text-white mt-4 font-semibold">Svelte</p>
               </div>
             </a>
             <a
               href="https://www.creative-tim.com/learning-lab/tailwind/react/alerts/notus?ref=ns-index"
               target="_blank"
             >
-              <div class="bg-blue-500 shadow-lg rounded-lg text-center p-8 mt-8">
+              <div
+                class="bg-blue-500 shadow-lg rounded-lg text-center p-8 mt-8"
+              >
                 <img
                   alt="..."
                   class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
                   src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/react.jpg"
                 />
-                <p class="text-lg text-white mt-4 font-semibold">
-                  ReactJS
-                </p>
+                <p class="text-lg text-white mt-4 font-semibold">ReactJS</p>
               </div>
             </a>
             <a
@@ -349,9 +340,7 @@
                   class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
                   src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/nextjs.jpg"
                 />
-                <p class="text-lg text-white mt-4 font-semibold">
-                  NextJS
-                </p>
+                <p class="text-lg text-white mt-4 font-semibold">NextJS</p>
               </div>
             </a>
           </div>
@@ -366,9 +355,7 @@
                   class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
                   src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/js.png"
                 />
-                <p class="text-lg text-white mt-4 font-semibold">
-                  JavaScript
-                </p>
+                <p class="text-lg text-white mt-4 font-semibold">JavaScript</p>
               </div>
             </a>
             <a
@@ -381,9 +368,7 @@
                   class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
                   src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/angular.jpg"
                 />
-                <p class="text-lg text-white mt-4 font-semibold">
-                  Angular
-                </p>
+                <p class="text-lg text-white mt-4 font-semibold">Angular</p>
               </div>
             </a>
             <a
@@ -398,9 +383,7 @@
                   class="shadow-md rounded-full max-w-full w-16 mx-auto p-2 bg-white"
                   src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/vue.jpg"
                 />
-                <p class="text-lg text-white mt-4 font-semibold">
-                  Vue.js
-                </p>
+                <p class="text-lg text-white mt-4 font-semibold">Vue.js</p>
               </div>
             </a>
           </div>
@@ -411,7 +394,7 @@
         <div
           class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
         >
-          <i class="fas fa-drafting-compass text-xl"></i>
+          <i class="fas fa-drafting-compass text-xl" />
         </div>
         <h3 class="text-3xl mb-2 font-semibold leading-normal">
           Javascript Components
@@ -472,7 +455,7 @@
           class="font-bold text-gray-800 hover:text-gray-600 ease-linear transition-all duration-150"
         >
           View all
-          <i class="fa fa-angle-double-right ml-1 leading-relaxed"></i>
+          <i class="fa fa-angle-double-right ml-1 leading-relaxed" />
         </a>
       </div>
     </div>
@@ -485,11 +468,9 @@
           <div
             class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
           >
-            <i class="fas fa-file-alt text-xl"></i>
+            <i class="fas fa-file-alt text-xl" />
           </div>
-          <h3 class="text-3xl font-semibold">
-            Complex Documentation
-          </h3>
+          <h3 class="text-3xl font-semibold">Complex Documentation</h3>
           <p class="mt-4 text-lg leading-relaxed text-gray-600">
             This extension comes a lot of fully coded examples that help you get
             started faster. You can adjust the colors and also the programming
@@ -502,7 +483,7 @@
                   <span
                     class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 mr-3"
                   >
-                    <i class="fas fa-fingerprint"></i>
+                    <i class="fas fa-fingerprint" />
                   </span>
                 </div>
                 <div>
@@ -518,7 +499,7 @@
                   <span
                     class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 mr-3"
                   >
-                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-html5" />
                   </span>
                 </div>
                 <div>
@@ -534,13 +515,11 @@
                   <span
                     class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-gray-600 bg-gray-100 mr-3"
                   >
-                    <i class="far fa-paper-plane"></i>
+                    <i class="far fa-paper-plane" />
                   </span>
                 </div>
                 <div>
-                  <h4 class="text-gray-600">
-                    Dynamic Javascript Components
-                  </h4>
+                  <h4 class="text-gray-600">Dynamic Javascript Components</h4>
                 </div>
               </div>
             </li>
@@ -556,7 +535,7 @@
             transform: scale(1) perspective(1040px) rotateY(-11deg)
               rotateX(2deg) rotate(2deg);
           "
-          src="{documentation}"
+          src={documentation}
         />
       </div>
     </div>
@@ -566,9 +545,9 @@
     <div class="w-full md:w-6/12 px-12 md:px-4">
       <h2 class="font-semibold text-4xl">Beautiful Example Pages</h2>
       <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-600">
-        Notus Svelte is a completly new product built using our past
-        experience in web templates. Take the examples we made for you and start
-        playing with them.
+        Notus Svelte is a completly new product built using our past experience
+        in web templates. Take the examples we made for you and start playing
+        with them.
       </p>
     </div>
   </div>
@@ -580,9 +559,7 @@
       <div class="w-full lg:w-12/12 px-4 -mt-24">
         <div class="flex flex-wrap">
           <div class="w-full lg:w-4/12 px-4">
-            <h5 class="text-xl font-semibold pb-4 text-center">
-              Login Page
-            </h5>
+            <h5 class="text-xl font-semibold pb-4 text-center">Login Page</h5>
             <Link to="/auth/login">
               <div
                 class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
@@ -590,16 +567,14 @@
                 <img
                   alt="..."
                   class="align-middle border-none max-w-full h-auto rounded-lg"
-                  src="{login}"
+                  src={login}
                 />
               </div>
             </Link>
           </div>
 
           <div class="w-full lg:w-4/12 px-4">
-            <h5 class="text-xl font-semibold pb-4 text-center">
-              Profile Page
-            </h5>
+            <h5 class="text-xl font-semibold pb-4 text-center">Profile Page</h5>
             <Link to="/profile">
               <div
                 class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
@@ -607,16 +582,14 @@
                 <img
                   alt="..."
                   class="align-middle border-none max-w-full h-auto rounded-lg"
-                  src="{profile}"
+                  src={profile}
                 />
               </div>
             </Link>
           </div>
 
           <div class="w-full lg:w-4/12 px-4">
-            <h5 class="text-xl font-semibold pb-4 text-center">
-              Landing Page
-            </h5>
+            <h5 class="text-xl font-semibold pb-4 text-center">Landing Page</h5>
             <Link to="/landing">
               <div
                 class="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150"
@@ -624,7 +597,7 @@
                 <img
                   alt="..."
                   class="align-middle border-none max-w-full h-auto rounded-lg"
-                  src="{landing}"
+                  src={landing}
                 />
               </div>
             </Link>
@@ -642,7 +615,7 @@
         <div
           class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white"
         >
-          <i class="fas fa-code-branch text-xl"></i>
+          <i class="fas fa-code-branch text-xl" />
         </div>
         <h3 class="text-3xl mb-2 font-semibold leading-normal text-white">
           Open Source
@@ -657,8 +630,8 @@
             Tailwind CSS
           </a>
           is an open source project we wanted to continue this movement too. You
-          can give this version a try to feel the design and also test the
-          quality of the code!
+          can give this version a try to feel the design and also test the quality
+          of the code!
         </p>
         <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-500">
           Get it free on Github and please help us spread the news with a Star!
@@ -675,7 +648,7 @@
       <div class="w-full md:w-4/12 px-4 mr-auto ml-auto mt-32 relative">
         <i
           class="fab fa-github text-gray-800 text-55 absolute -top-150-px -right-100 left-auto opacity-80"
-        ></i>
+        />
       </div>
     </div>
   </div>
@@ -698,7 +671,7 @@
       <polygon
         class="text-gray-300 fill-current"
         points="2560 0 2560 100 0 100"
-      ></polygon>
+      />
     </svg>
   </div>
 
@@ -708,13 +681,9 @@
     >
       <div class="w-full text-center lg:w-8/12">
         <p class="text-4xl text-center">
-          <span role="img" aria-label="love">
-            😍
-          </span>
+          <span role="img" aria-label="love"> 😍 </span>
         </p>
-        <h3 class="font-semibold text-3xl">
-          Do you love this Starter Kit?
-        </h3>
+        <h3 class="font-semibold text-3xl">Do you love this Starter Kit?</h3>
         <p class="text-gray-600 text-lg leading-relaxed mt-4 mb-4">
           Cause if you do, it can be yours now. Hit the buttons below to
           navigate to get the Free version for your next project. Build a new
@@ -733,11 +702,11 @@
             target="_blank"
             class="github-star sm:ml-1 text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-gray-800 active:bg-gray-700 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
           >
-            <i class="fab fa-github text-lg mr-1"></i>
+            <i class="fab fa-github text-lg mr-1" />
             <span>Help With a Star</span>
           </a>
         </div>
-        <div class="text-center mt-16"></div>
+        <div class="text-center mt-16" />
       </div>
     </div>
   </div>

@@ -4,7 +4,6 @@
   // core components
   const github = "../assets/img/github.svg";
   const google = "../assets/img/google.svg";
-  export let location;
 </script>
 
 <div class="container mx-auto px-4 h-full">
@@ -15,23 +14,21 @@
       >
         <div class="rounded-t mb-0 px-6 py-6">
           <div class="text-center mb-3">
-            <h6 class="text-gray-600 text-sm font-bold">
-              Sign in with
-            </h6>
+            <h6 class="text-gray-600 text-sm font-bold">Sign in with</h6>
           </div>
           <div class="btn-wrapper text-center">
             <button
               class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
               type="button"
             >
-              <img alt="..." class="w-5 mr-1" src="{github}" />
+              <img alt="..." class="w-5 mr-1" src={github} />
               Github
             </button>
             <button
               class="bg-white active:bg-gray-100 text-gray-800 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
               type="button"
             >
-              <img alt="..." class="w-5 mr-1" src="{google}" />
+              <img alt="..." class="w-5 mr-1" src={google} />
               Google
             </button>
           </div>
@@ -97,7 +94,11 @@
       </div>
       <div class="flex flex-wrap mt-6 relative">
         <div class="w-1/2">
-          <a href="#pablo" on:click={(e) => e.preventDefault()} class="text-gray-300">
+          <a
+            href="#pablo"
+            on:click={(e) => e.preventDefault()}
+            class="text-gray-300"
+          >
             <small>Forgot password?</small>
           </a>
         </div>
