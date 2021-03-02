@@ -1,9 +1,8 @@
 <script>
   // core components
   import { onMount } from "svelte";
-
-  import IndexNavbar from "components/Navbars/IndexNavbar.svelte";
-  import Footer from "components/Footers/Footer.svelte";
+  import IndexNavbar from "stories/components/Navbars/IndexNavbar.svelte";
+  import Footer from "stories/components/Footers/Footer.svelte";
   import { info } from "./store/infoStore";
   export let name;
 

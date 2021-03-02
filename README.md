@@ -1,32 +1,30 @@
-# Svelte app
+# Svelte template app
+
+## Tech stack
+- Svelte
+- Storybook
+- TailwindCSS
+- Deploy to Github page using Github Action
+  
+> If you want to use Github page and your github account is free, your repository should be public repo.
 
 ## Installation
 ```bash
-npx degit chromaui/intro-storybook-svelte-template lazy-pomodoro
-cd lazy-pomodoro
+npx degit masumomo/svelte-storybook-github-template <Project Name>
+cd <Project Name>
 yarn
 yarn dev # make sure it works
 yarn storybook # make sure it works
 yarn test  # make sure it works
 git init
 git add .
-git commit -m "First commit"
-yarn add --dev tailwindcss postcss@latest autoprefixer@latest @rollup/plugin-alias
-yarn add
-    "@fortawesome/fontawesome-free": "5.14.0",
-    "@popperjs/core": "2.5.1",
-    "@rollup/plugin-alias": "3.1.1",
-    "@tailwindcss/custom-forms": "0.2.1",
-    "chart.js": "2.9.3",
-    "sirv-cli": "1.0.6",
-    "svelte-routing": "1.4.2",
-    "tailwindcss": "1.8.10"
-yarn tailwindcss init
+git commit -m "Initial commit"
+git remote add origin <Your repo> # It depends on your project
+git push origin head # Github action would run automatically and it would be deployed!
 ```
 
-## Road map
-- Setup Svelte & Storybook & UI library
-- Deploy to [Github page](https://community.thenetninja.co.uk/t/deploying-my-svelte-app-to-github-pages/762?ref=creativetim) or Heroku 
-- Crate app which uses only local storage
-- Create backend using go
-- Change app to use database like MySQL or PostgreSQL
+## TODO for myself...
+- [x]Done🎉 Setup Svelte & Storybook & UI library
+- [x]Done🎉 Deploy to [Github page](https://community.thenetninja.co.uk/t/deploying-my-svelte-app-to-github-pages/762?ref=creativetim) or Heroku 
+- []Done🎉 Create sample pages(2 or more)
+- []Done🎉 Crate app which uses only local storage or static
