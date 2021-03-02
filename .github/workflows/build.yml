@@ -21,7 +21,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: install and Build 🏠
         run: |
-          yarn install
+          yarn install:clean
+          yarn build:tailwind
+          yarn build:fontawesome
           yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
