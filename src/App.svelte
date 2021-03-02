@@ -1,7 +1,11 @@
 <script>
   // core components
+  import { onMount } from "svelte";
+
   import IndexNavbar from "components/Navbars/IndexNavbar.svelte";
   import Footer from "components/Footers/Footer.svelte";
+  import { info } from "./store/infoStore";
+  export let name;
 
   const patternVue = "/assets/img/pattern_svelte.png";
   const componentBtn = "/assets/img/component-btn.png";
@@ -14,6 +18,23 @@
   const login = "/assets/img/login.jpg";
   const profile = "/assets/img/profile.jpg";
   const landing = "/assets/img/landing.jpg";
+
+  let savedInfo = {};
+  onMount(() => {
+    //
+    // Subscribe to the information store to get the site information.
+    //
+    const unsubscribeInfo = info.subscribe((value) => {
+      savedInfo = value;
+      document.body.style.backgroundColor = value.styles.backgroundColor;
+      showLogo = value.styles.showlogo;
+      winResize({});
+    });
+
+    return () => {
+      unsubscribeInfo();
+    };
+  });
 </script>
 
 <IndexNavbar />
@@ -22,7 +43,7 @@
     <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
       <div class="pt-32 sm:pt-0">
         <h2 class="font-semibold text-4xl text-gray-700">
-          Notus Svelte - A beautiful extension for Tailwind CSS.
+          Hello {name} - {$info.siteName}.
         </h2>
         <p class="mt-4 text-lg leading-relaxed text-gray-600">
           Notus Svelte is Free and Open Source. It does not change or add any

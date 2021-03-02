@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 
 export const info = writable({
-    siteName: 'Nuem',
+    siteName: 'Sample Svelte app with Tailwind CSS & Storybook',
     byLine: 'Rethinking the menu',
     address: 'http://localhost:5000',
     GitHub: 'https://raw.micahguay.com/numi.io/',
