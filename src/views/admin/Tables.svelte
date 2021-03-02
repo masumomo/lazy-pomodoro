@@ -1,6 +1,6 @@
 <script>
   // core components
-  import CardTable from "components/Cards/CardTable.svelte";
+  import CardTable from "stories/Cards/CardTable.svelte";
 </script>
 
 <div class="flex flex-wrap mt-4">

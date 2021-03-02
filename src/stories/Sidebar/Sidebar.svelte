@@ -1,7 +1,7 @@
 <script>
   // core components
-  import NotificationDropdown from "components/Dropdowns/NotificationDropdown.svelte";
-  import UserDropdown from "components/Dropdowns/UserDropdown.svelte";
+  import NotificationDropdown from "stories/Dropdowns/NotificationDropdown.svelte";
+  import UserDropdown from "stories/Dropdowns/UserDropdown.svelte";
 
   let collapseShow = "hidden";
 

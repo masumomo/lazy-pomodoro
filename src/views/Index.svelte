@@ -2,8 +2,8 @@
   import { Link } from "svelte-routing";
 
   // core components
-  import IndexNavbar from "components/Navbars/IndexNavbar.svelte";
-  import Footer from "components/Footers/Footer.svelte";
+  import IndexNavbar from "stories/Navbars/IndexNavbar.svelte";
+  import Footer from "stories/Footers/Footer.svelte";
 
   const patternVue = "/assets/img/pattern_svelte.png";
   const componentBtn = "/assets/img/component-btn.png";

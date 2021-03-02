@@ -2,8 +2,8 @@
   import { Router, Route } from "svelte-routing";
 
   // components for this layout
-  import AuthNavbar from "components/Navbars/AuthNavbar.svelte";
-  import FooterSmall from "components/Footers/FooterSmall.svelte";
+  import AuthNavbar from "stories/Navbars/AuthNavbar.svelte";
+  import FooterSmall from "stories/Footers/FooterSmall.svelte";
 
   // pages for this layout
   import Login from "views/auth/Login.svelte";

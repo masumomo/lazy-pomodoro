@@ -2,10 +2,10 @@
   import { Router, Route } from "svelte-routing";
 
   // components for this layout
-  import AdminNavbar from "components/Navbars/AdminNavbar.svelte";
-  import Sidebar from "components/Sidebar/Sidebar.svelte";
-  import HeaderStats from "components/Headers/HeaderStats.svelte";
-  import FooterAdmin from "components/Footers/FooterAdmin.svelte";
+  import AdminNavbar from "stories/Navbars/AdminNavbar.svelte";
+  import Sidebar from "stories/Sidebar/Sidebar.svelte";
+  import HeaderStats from "stories/Headers/HeaderStats.svelte";
+  import FooterAdmin from "stories/Footers/FooterAdmin.svelte";
 
   // pages for this layout
   import Dashboard from "views/admin/Dashboard.svelte";

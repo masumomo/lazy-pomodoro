@@ -1,6 +1,6 @@
 <script>
   // core components
-  import UserDropdown from "components/Dropdowns/UserDropdown.svelte";
+  import UserDropdown from "./Dropdowns/UserDropdown.svelte";
 </script>
 
 <!-- Navbar -->
@@ -13,7 +13,8 @@
     <!-- Brand -->
     <a
       class="text-white text-sm uppercase hidden lg:inline-block font-semibold"
-      href="#pablo" on:click={(e) => e.preventDefault()}
+      href="#pablo"
+      on:click={(e) => e.preventDefault()}
     >
       Dashboard
     </a>
@@ -25,7 +26,7 @@
         <span
           class="z-10 h-full leading-snug font-normal absolute text-center text-gray-400 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3"
         >
-          <i class="fas fa-search"></i>
+          <i class="fas fa-search" />
         </span>
         <input
           type="text"

@@ -1,7 +1,7 @@
 <script>
   // core components
-  import CardSettings from "components/Cards/CardSettings.svelte";
-  import CardProfile from "components/Cards/CardProfile.svelte";
+  import CardSettings from "stories/Cards/CardSettings.svelte";
+  import CardProfile from "stories/Cards/CardProfile.svelte";
 </script>
 
 <div class="flex flex-wrap">

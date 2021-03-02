@@ -9,7 +9,7 @@ import css from 'rollup-plugin-css-only';
 // absolute paths, instead of
 // import Component  from "../../../../components/Component.svelte";
 // we will be able to say
-// import Component from "components/Component.svelte";
+// import Component from "stories/Component.svelte";
 import alias from "@rollup/plugin-alias";
 
 const production = !process.env.ROLLUP_WATCH;
@@ -18,9 +18,10 @@ const production = !process.env.ROLLUP_WATCH;
 const aliases = alias({
   resolve: [".svelte", ".js"], //optional, by default this will just look for .js files or folders
   entries: [
-    { find: "components", replacement: "src/components" },
+    { find: "stories", replacement: "src/stories" },
     { find: "views", replacement: "src/views" },
     { find: "assets", replacement: "src/assets" },
+    { find: "stores", replacement: "src/stores" },
   ],
 });
 
@@ -95,7 +96,7 @@ export default {
     // i.e., instead of
     // import Component  from "../../../../components/Component.svelte";
     // we will be able to say
-    // import Component from "components/Component.svelte";
+    // import Component from "stories/Component.svelte";
     aliases,
   ],
   watch: {

@@ -1,9 +1,9 @@
 <script>
   // core components
   import { onMount } from "svelte";
-  import IndexNavbar from "stories/components/Navbars/IndexNavbar.svelte";
-  import Footer from "stories/components/Footers/Footer.svelte";
-  import { info } from "./store/infoStore";
+  import IndexNavbar from "stories/Navbars/IndexNavbar.svelte";
+  import Footer from "stories/Footers/Footer.svelte";
+  import { info } from "store/infoStore";
   export let name;
 
   const patternVue = "/assets/img/pattern_svelte.png";
