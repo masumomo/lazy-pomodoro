@@ -22,7 +22,7 @@ jobs:
       - name: install and Build 🏠
         run: |
           yarn install
-          yarn run build
+          yarn build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
