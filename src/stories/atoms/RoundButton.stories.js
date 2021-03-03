@@ -46,3 +46,10 @@ Small.args = {
   size: 'small',
   label: 'RoundButton',
 };
+
+export const CustomColor = Template.bind({});
+CustomColor.args = {
+  backgroundColor:"#e3e",
+  primary: true,
+  label: 'RoundButton',
+};
