@@ -1,8 +1,10 @@
-import Button from './Button.svelte';
+import RoundButton from '../../components/atoms/RoundButton.svelte';
+import '../../../public/assets/styles/index.css';
+import '../../../public/assets/styles/tailwind.css';
 
 export default {
-  title: 'Example/Button',
-  component: Button,
+  title: 'Atoms/Button',
+  component: RoundButton,
   argTypes: {
     label: { control: 'text' },
     primary: { control: 'boolean' },
@@ -15,7 +17,7 @@ export default {
 };
 
 const Template = ({ onClick, ...args }) => ({
-  Component: Button,
+  Component: RoundButton,
   props: args,
   on: {
     click: onClick,
@@ -25,22 +27,22 @@ const Template = ({ onClick, ...args }) => ({
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: 'Button',
+  label: 'RoundButton',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
-  label: 'Button',
+  label: 'RoundButton',
 };
 
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
-  label: 'Button',
+  label: 'RoundButton',
 };
 
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
-  label: 'Button',
+  label: 'RoundButton',
 };

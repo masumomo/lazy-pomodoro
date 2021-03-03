@@ -1,9 +1,9 @@
 <script>
   // core components
   import { onMount } from "svelte";
-  import IndexNavbar from "stories/Navbars/IndexNavbar.svelte";
-  import Footer from "stories/Footers/Footer.svelte";
-  import { info } from "store/infoStore";
+  import Header from "components/organisms/Header.svelte";
+  import Footer from "components/organisms/Footer.svelte";
+  import { info } from "store/infoStore.js";
   export let name;
 
   const patternVue = "/assets/img/pattern_svelte.png";
@@ -36,7 +36,8 @@
   });
 </script>
 
-<IndexNavbar />
+<!-- <IndexNavbar /> -->
+<Header />
 <section class="header relative pt-16 items-center flex h-screen max-h-860-px">
   <div class="container mx-auto items-center flex flex-wrap">
     <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">

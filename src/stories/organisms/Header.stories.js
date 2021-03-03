@@ -1,7 +1,9 @@
-import Header from './Header.svelte';
+import Header from '../../components/organisms/Header.svelte';
+import '../../../public/assets/styles/index.css';
+import '../../../public/assets/styles/tailwind.css';
 
 export default {
-  title: 'Example/Header',
+  title: 'Organism/Header',
   component: Header,
   argTypes: {
     onLogin: { action: 'onLogin' },

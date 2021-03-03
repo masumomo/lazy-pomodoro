@@ -1,8 +1,8 @@
 import Page from './Page.svelte';
-import * as HeaderStories from './Header.stories';
+import * as HeaderStories from './organisms/Header.stories';
 
 export default {
-  title: 'Example/Page',
+  title: 'Example/Page', // TODO
   component: Page,
   argTypes: {
     onLogin: { action: 'onLogin' },
