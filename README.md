@@ -26,5 +26,12 @@ git push origin head # Github action would run automatically and it would be dep
 ## TODO for myself...
 - [x]Done🎉 Setup Svelte & Storybook & UI library
 - [x]Done🎉 Deploy to [Github page](https://community.thenetninja.co.uk/t/deploying-my-svelte-app-to-github-pages/762?ref=creativetim) or Heroku 
-- []Done🎉 Create sample pages(2 or more)
+- [x]Done🎉 Create round buttons
+- [x]Done🎉 Create buttons
+- []Done🎉 Create header
+- []Done🎉 Create footer
+- []Done🎉 Create card
+- []Done🎉 Create article(half size)
+- []Done🎉 Create article(full size)
+- []Done🎉 Create sample pages(2 or more) 
 - []Done🎉 Crate app which uses only local storage or static
