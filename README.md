@@ -24,6 +24,11 @@ git push origin head # Github action would run automatically and it would be dep
 ```
 
 ## TODO for myself...
+
+[Sample atomic design](https://atomicdesign.bradfrost.com/chapter-2/#atomic-design-is-for-user-interfaces)
+
+[Nice tailwind design components](https://tailwindui.com/components?utm_source=tailwindcss&utm_medium=navigation)
+
 - [x]Done🎉 Setup Svelte & Storybook & UI library
 - [x]Done🎉 Deploy to [Github page](https://community.thenetninja.co.uk/t/deploying-my-svelte-app-to-github-pages/762?ref=creativetim) or Heroku 
 - [x]Done🎉 Create round buttons
@@ -34,4 +39,6 @@ git push origin head # Github action would run automatically and it would be dep
 - []Done🎉 Create article(half size)
 - []Done🎉 Create article(full size)
 - []Done🎉 Create sample pages(2 or more) 
+  - Sample Blog 
+  - Sample LP
 - []Done🎉 Crate app which uses only local storage or static
